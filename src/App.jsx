@@ -1,20 +1,24 @@
-import { useState } from 'react'
 import './App.css'
 import Home from "./component/Home"
-import Header from './component/Header'
-import Alex from './component/Alex'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Navbar from './component/Navbar'
 
 function App() {
 
   return (
-    <>
-      <div>
-      <Header></Header>
-      <br /><br /><br /><br /><br /><br />
-      <Home></Home>
-      </div>
-    </>
+    
+    <div >
+      <Navbar />
+      <Router>
+        <Routes>
+          <Route exact path="/home" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+    </Router>
+    </div>
+    
   )
 }
 
 export default App
+

@@ -15,6 +15,7 @@ import Logo8 from "../assets/logo8.png"
 import facebook from "../assets/facebook.png"
 import inster from "../assets/instagram.png"
 import logo from "../assets/logo.png"
+import '../App.css'
 
 const Home = () => {
   const images = [image1, image2, image3, image4];
@@ -75,141 +76,112 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='home'>
-      <div className="image-slider-home">
-        <img src={images[currentImage]} alt={`Slide ${currentImage + 1}`} />
-        <div className="text-overlay1-home">{texts1[currentImage]}</div>
-        <div className="text-overlay2-home">{texts2[currentImage]}</div>
-        <button className="text-overlay3-home">{buttons[currentImage]}</button>
+    <div class='bg-black'>
+      <div class="bg-black">
+        <img class="w-full" src={images[currentImage]} alt={`Slide ${currentImage + 1}`} />
+        <div class="text-white text-5xl absolute inset-x-1/4 bottom-64 font-medium uppercase text-slate-300">{texts1[currentImage]}</div>
+        <div class="text-white text-8xl absolute inset-x-1/4 bottom-40 font-bold uppercase">{texts2[currentImage]}</div>
+        <button class="text-white text-1xl absolute left-1/2 bottom-24 bg-black  w-40 p-1 uppercase transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">{buttons[currentImage]}</button>
       </div>
-
-      <div className="Reasons-home1" id="reasons">
-        <div className="right-r-home-1">
-          
-          <div>
-            <span className="stroke-text">alex</span>
-            <span> wides</span>
-          </div>
-          <div>
-            <span className="topic-home">panoramic addicted</span>
-          </div>
-          <div className="details-r-home">
-            <div>
-              <span>
-                Alex Wides is a multi prestigious awards winning photographer, recognized all over the world for creating a unique style of fine art landscape photography: the Extreme Panoramas with field angles up to 360° that shows the viewer everything Alex sees around him when he reaches the most remote places in the world.
-              </span>
-            </div>
-          </div>
+      <div class="bg-black text-white grid grid-cols-2 gap-4">
+        <div class=""><br />
+          <div><span class="uppercase text-5xl ">alex wides</span></div><br />
+          <div><span class="uppercase text-2xl ">panoramic addicted</span></div><br />
+          <div><span>Alex Wides is a multi prestigious awards winning photographer, recognized all over the world for creating a unique style of fine art landscape photography: the Extreme Panoramas with field angles up to 360° that shows the viewer everything Alex sees around him when he reaches the most remote places in the world.</span></div><br />
         </div>
-        <div className="left-r-home-1">
+        <div class="">
+          <br />
           <img src={image1} alt="" />
+          <br />
         </div>
       </div>
 
       <div className="background1-home">
-        <div className="Reasons-home1" id="reasons">
-          <div className="left-r-home-1">
+        <div class=" text-white grid grid-cols-2 gap-4">
+          <div class="">
+            <br />
             <img src={image3} alt="" />
           </div>
-          <div className="right-r-home-1">
-            <div className="details-r-home">
-              <div>
-                
-              <section className="card-home">
-                <br /><br />
-              <div className='home-cart1'><span className="stroke-text">prints</span>
-              <span> & licensing</span></div>
+          <div class="">
               <br /><br /><br />
-                <span>
+              <div><span class="uppercase text-5xl ">prints & licensing</span></div>
+              <br /><br />
+                <span class="uppercase text-1xl ">
                   You can purchase your giant panorama photo print, Luxury limited edition fine art frames. Feel free to
-                  <span className="contact"> contact me</span>
+                  <span class="text-yellow-300"> contact me</span>
                   <span> to discuss about your projects</span>
-                </span>
-                <br /><br /><br />
-                </section>
-              </div>
-            </div>
+                </span>        
           </div>
         </div>
       </div>
-      <div className='logoback-home'>
-      <span className='as_seen'> as seen in</span>
-      <center>
-    <div className='logo-alex' style={{ position: 'relative', width: '100%' }}>
-      
-            <img src={logos[currentLogo]} alt="Slide" style={{ width: '15%', borderRadius: '10px' }}/>
-            <img src={logos[(currentLogo + 1) % images.length]} alt="Slide 2" style={{ width: '15%', borderRadius: '10px' }}/>
-            <img src={logos[(currentLogo + 2) % images.length]} alt="Slide 3" style={{ width: '15%', borderRadius: '10px' }}/>
-            <img src={logos[(currentLogo + 3) % images.length]} alt="Slide 4" style={{ width: '15%', borderRadius: '10px' }}/>
-            <img src={logos[(currentLogo + 4) % images.length]} alt="Slide 5" style={{ width: '15%', borderRadius: '10px' }}/>
-      </div></center>
+      <div class='bg-black'><br /><br />
+        <span class='uppercase text-3xl text-white'> as seen in</span>
+        <br />
+        <center>
+        <div class='grid gap-4 grid-cols-5' style={{ position: 'relative', width: '60%' }}>
+          <div><img src={logos[currentLogo]} alt="Slide" style={{ width: '80%', borderRadius: '10px' }}/></div>
+          <div><img src={logos[(currentLogo + 1) % images.length]} alt="Slide 2" style={{ width: '80%', borderRadius: '10px' }}/></div>
+          <div><img src={logos[(currentLogo + 2) % images.length]} alt="Slide 3" style={{ width: '80%', borderRadius: '10px' }}/></div>
+          <div><img src={logos[(currentLogo + 3) % images.length]} alt="Slide 4" style={{ width: '80%', borderRadius: '10px' }}/></div>
+          <div><img src={logos[(currentLogo + 4) % images.length]} alt="Slide 5" style={{ width: '80%', borderRadius: '10px' }}/></div>
+          <br /><br />
+        </div>
+        </center>
       </div>
 
       <div>
-      <div className="background2">
-        <div className="Reasons-home2" id="reasons">
-          <div className="lefthome">
-            <div>
-            <section className="card-home">
-                <div className='home-cart1'><span>algarve portugal phototour</span></div>
-                <div className='home-cart2'><span>8-15 december 2024</span></div>
-                <div className='home-cart3'><span>A memorable journey of seascape panoramas through best landscapes in Porugal</span></div>
-                <div><center><button className='home-cart-btn'>see more</button></center></div>
-            </section>
+        <div className="background2-home">
+          <div class=" text-white grid grid-cols-2 gap-4">
+            <div class="">
+              <div class="">
+                  <div class='uppercase text-5xl text-white text-center inset-x-1/4 p-3 font-medium'><span>algarve portugal phototour</span></div>
+                  <div class='uppercase text-2xl text-white font-medium'><span>8-15 december 2024</span></div>
+                  <div class='text-1xl text-white p-3 font-medium'><span>A memorable journey of seascape panoramas through best landscapes in Porugal</span></div>
+                  <div><center><button class='bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>see more</button></center></div>
+              </div><br /><br />
+              <div class=''><img src={image3} alt="" style={{ width: '95%', borderRadius: '10px' }}/></div>
             </div>
-            <div className='home-cart-image'><img src={image3} alt="" style={{ width: '95%', borderRadius: '10px' }}/></div>
+            <div class="">
+              <div>
+                  <div class='uppercase text-5xl text-white text-center inset-x-1/4 p-3 font-medium'><span>senja island wild camping thototour</span></div>
+                  <div class='uppercase text-2xl text-white font-medium'><span>6-13 october 2024</span></div>
+                  <div class='text-1xl text-white p-3 font-medium'><span>An unforgettable adventure to the majestic fjords. With fishing and bonfires under auroras</span></div>
+                  <div><center><button class='bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>see more</button></center></div>
+                </div><br /><br />
+                <div class=''><img src={image1} alt="" style={{ width: '95%', borderRadius: '10px' }}/></div>
+            </div>
           </div>
-          <div className="righhome">
-            <div>
-              <section className="card">
-                <div className='home-cart1'><span>senja island wild camping thototour</span></div>
-                <div className='home-cart2'><span>6-13 october 2024</span></div>
-                <div className='home-cart3'><span>An unforgettable adventure to the majestic fjords. With fishing and bonfires under auroras</span></div>
-                <div><center><button className='home-cart-btn'>see more</button></center></div>
-              </section>
+        </div>
+        
+        <div class="bg-black text-white"><br /><br /><br />
+          <h2 class="uppercase text-5xl text-white">BLOG & UPDATES</h2><br /><br />
+          <div class="">
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <button class="absolute left-2 text-4xl" onClick={prevSlide}>❮</button>
+                <img class="w-full"src={slides[currentSlide].image} alt="Slide"/>
               </div>
-              <div className='home-cart-image'><img src={image1} alt="" style={{ width: '95%', borderRadius: '10px' }}/></div>
+              <div class="">
+                <button class="absolute right-2 text-4xl" onClick={nextSlide}>❯</button>
+                <p class="text-white text-2xl absolute text-slate-300">{slides[currentSlide].topic}</p><br /><br /><br />
+                <p class="w-3/4 text-white text-2xl font-medium uppercase text-slate-300">{slides[currentSlide].title}</p><br /><br /><br />
+                <p class="w-3/4">{slides[currentSlide].description}</p><br />
+                <button class="absolute right-96 bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">Read More</button>
+              </div>
+            </div>
           </div>
+          <div>
+            {slides.map((_, index) => (
+            <span key={index} className={`dot ${index === currentSlide ? 'active' : ''}`} onClick={() => setCurrentSlide(index)} > </span>
+            ))}
+          </div><br /><br />
+          <button class=" bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">VIEW ALL POSTS</button><br /><br />
         </div>
-      </div>
-      </div>
-      <div className="carousel-container">
-      <h2 className="carousel-title">BLOG & UPDATES</h2>
-
-      <div className="carousel">
-        <button className="carousel-button left" onClick={prevSlide}>❮</button>
-
-        <div className="carousel-slide">
-          <img src={slides[currentSlide].image} alt="Slide" className="carousel-image" />
-
-          <div className="carousel-text">
-            <p className="carousel-topic">{slides[currentSlide].topic}</p>
-            <h3 className="carousel-subtitle">{slides[currentSlide].title}</h3>
-            <p>{slides[currentSlide].description}</p>
-            <button className="read-more-button">Read More</button>
-          </div>
+        <div class='text-white'>
+          <center><img src={logo} alt="" className='contlogo'/></center>
+          <p >Copyright 2019 - 2024 |   All Rights Reserved   |   Alessandro Cantarelli Partita Iva N° 12972751007</p><br />
+          <center><img src={facebook} alt="" /><img src={inster} alt="" /></center>
         </div>
-
-        <button className="carousel-button right" onClick={nextSlide}>❯</button>
-      </div>
-
-      <div className="carousel-dots">
-        {slides.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === currentSlide ? 'active' : ''}`}
-            onClick={() => setCurrentSlide(index)}
-          ></span>
-        ))}
-      </div>
-
-      <button className="view-all-posts-button">VIEW ALL POSTS</button>
-    </div>
-
-      <div className='contp'>
-        <center><img src={logo} alt="" className='contlogo'/></center>
-        <p className='lastp'>Copyright 2019 - 2024 |   All Rights Reserved   |   Alessandro Cantarelli Partita Iva N° 12972751007</p>
-        <center><img src={facebook} alt="" className='conticon'/><img src={inster} alt="" className='conticon'/></center>
       </div>
     </div>
   );
