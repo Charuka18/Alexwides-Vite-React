@@ -14,7 +14,7 @@ import Logo7 from "../assets/logo7.png"
 import Logo8 from "../assets/logo8.png"
 import facebook from "../assets/facebook.png"
 import inster from "../assets/instagram.png"
-import logo from "../assets/logo.png"
+import logo from "../assets/Logo.png"
 import '../App.css'
 
 const Home = () => {
@@ -178,7 +178,7 @@ const Home = () => {
           <button class=" bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">VIEW ALL POSTS</button><br /><br />
         </div>
         <div class='text-white'>
-          <center><img src={logo} alt="" className='contlogo'/></center>
+          <center><img src={logo} alt=""/></center>
           <p >Copyright 2019 - 2024 |   All Rights Reserved   |   Alessandro Cantarelli Partita Iva N° 12972751007</p><br />
           <center><img src={facebook} alt="" /><img src={inster} alt="" /></center>
         </div>
