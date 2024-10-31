@@ -76,14 +76,18 @@ const Home = () => {
   }, []);
 
   return (
-    <div class='bg-black'>
-      <div class="bg-black">
-        <img class="w-full" src={images[currentImage]} alt={`Slide ${currentImage + 1}`} />
-        <div class="text-white text-5xl absolute inset-x-1/4 bottom-64 font-medium uppercase text-slate-300">{texts1[currentImage]}</div>
-        <div class="text-white text-8xl absolute inset-x-1/4 bottom-40 font-bold uppercase">{texts2[currentImage]}</div>
-        <button class="text-white text-1xl absolute left-1/2 bottom-24 bg-black  w-40 p-1 uppercase transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">{buttons[currentImage]}</button>
+    <div class='bg-black text-white'>
+      <div className="relative">
+        <img className="w-full h-[50vh] md:h-[70vh] object-cover" src={images[currentImage]} alt={`Slide ${currentImage + 1}`} />
+        <div className="absolute inset-x-0 bottom-20 text-center">
+          <h2 className="text-3xl md:text-5xl font-medium uppercase">{texts1[currentImage]}</h2>
+          <h1 className="text-5xl md:text-8xl font-bold uppercase">{texts2[currentImage]}</h1>
+          <button className="mt-4 px-4 py-2 bg-black border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black transition">
+            {buttons[currentImage]}
+          </button>
+        </div>
       </div>
-      <div class="bg-black text-white grid grid-cols-2 gap-4">
+      <div class="p-6 md:p-12 grid gap-4 md:grid-cols-2">
         <div class=""><br />
           <div><span class="uppercase text-5xl ">alex wides</span></div><br />
           <div><span class="uppercase text-2xl ">panoramic addicted</span></div><br />
@@ -97,7 +101,7 @@ const Home = () => {
       </div>
 
       <div className="background1-home">
-        <div class=" text-white grid grid-cols-2 gap-4">
+        <div class="p-6 md:p-12 grid gap-4 md:grid-cols-2">
           <div class="">
             <br />
             <img src={image3} alt="" />
@@ -131,7 +135,7 @@ const Home = () => {
 
       <div>
         <div className="background2-home">
-          <div class=" text-white grid grid-cols-2 gap-4">
+          <div class="p-6 md:p-12 grid gap-4 md:grid-cols-2">
             <div class="">
               <div class="">
                   <div class='uppercase text-5xl text-white text-center inset-x-1/4 p-3 font-medium'><span>algarve portugal phototour</span></div>
@@ -156,7 +160,7 @@ const Home = () => {
         <div class="bg-black text-white"><br /><br /><br />
           <h2 class="uppercase text-5xl text-white">BLOG & UPDATES</h2><br /><br />
           <div class="">
-            <div class="grid grid-cols-2 gap-4">
+            <div class="p-6 md:p-12 grid gap-4 md:grid-cols-2">
               <div>
                 <button class="absolute left-2 text-4xl" onClick={prevSlide}>❮</button>
                 <img class="w-full"src={slides[currentSlide].image} alt="Slide"/>
