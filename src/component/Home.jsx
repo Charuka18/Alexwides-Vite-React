@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-
 import image1 from '../assets/image1.jpg';
 import image2 from '../assets/image2.jpg';
 import image3 from '../assets/image3.jpg';
@@ -76,7 +75,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div class='bg-black text-white'>
+    <div className='bg-black text-white'>
       <div className="relative">
         <img className="w-full h-[50vh] md:h-[70vh] object-cover" src={images[currentImage]} alt={`Slide ${currentImage + 1}`} />
         <div className="absolute inset-x-0 bottom-20 text-center">
@@ -87,13 +86,13 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div class="p-6 md:p-12 grid gap-4 md:grid-cols-2">
-        <div class=""><br />
-          <div><span class="uppercase text-5xl ">alex wides</span></div><br />
-          <div><span class="uppercase text-2xl ">panoramic addicted</span></div><br />
+      <div className="p-6 md:p-12 grid gap-4 md:grid-cols-2">
+        <div className=""><br />
+          <div><span className="uppercase text-5xl ">alex wides</span></div><br />
+          <div><span className="uppercase text-2xl ">panoramic addicted</span></div><br />
           <div><span>Alex Wides is a multi prestigious awards winning photographer, recognized all over the world for creating a unique style of fine art landscape photography: the Extreme Panoramas with field angles up to 360° that shows the viewer everything Alex sees around him when he reaches the most remote places in the world.</span></div><br />
         </div>
-        <div class="">
+        <div>
           <br />
           <img src={image1} alt="" />
           <br />
@@ -101,28 +100,28 @@ const Home = () => {
       </div>
 
       <div className="background1-home">
-        <div class="p-6 md:p-12 grid gap-4 md:grid-cols-2">
-          <div class="">
+        <div className="p-6 md:p-12 grid gap-4 md:grid-cols-2">
+          <div>
             <br />
             <img src={image3} alt="" />
           </div>
-          <div class="">
+          <div>
               <br /><br /><br />
-              <div><span class="uppercase text-5xl ">prints & licensing</span></div>
+              <div><span className="uppercase text-5xl ">prints & licensing</span></div>
               <br /><br />
-                <span class="uppercase text-1xl ">
+                <span className="uppercase text-1xl ">
                   You can purchase your giant panorama photo print, Luxury limited edition fine art frames. Feel free to
-                  <span class="text-yellow-300"> contact me</span>
+                  <span className="text-yellow-300"> contact me</span>
                   <span> to discuss about your projects</span>
                 </span>        
           </div>
         </div>
       </div>
-      <div class='bg-black'><br /><br />
-        <span class='uppercase text-3xl text-white'> as seen in</span>
+      <div className='bg-black'><br /><br />
+        <span className='uppercase text-3xl text-white'> as seen in</span>
         <br />
         <center>
-        <div class='grid gap-4 grid-cols-5' style={{ position: 'relative', width: '60%' }}>
+        <div className='grid gap-4 grid-cols-5' style={{ position: 'relative', width: '60%' }}>
           <div><img src={logos[currentLogo]} alt="Slide" style={{ width: '80%', borderRadius: '10px' }}/></div>
           <div><img src={logos[(currentLogo + 1) % images.length]} alt="Slide 2" style={{ width: '80%', borderRadius: '10px' }}/></div>
           <div><img src={logos[(currentLogo + 2) % images.length]} alt="Slide 3" style={{ width: '80%', borderRadius: '10px' }}/></div>
@@ -135,42 +134,42 @@ const Home = () => {
 
       <div>
         <div className="background2-home">
-          <div class="p-6 md:p-12 grid gap-4 md:grid-cols-2">
-            <div class="">
-              <div class="">
-                  <div class='uppercase text-5xl text-white text-center inset-x-1/4 p-3 font-medium'><span>algarve portugal phototour</span></div>
-                  <div class='uppercase text-2xl text-white font-medium'><span>8-15 december 2024</span></div>
-                  <div class='text-1xl text-white p-3 font-medium'><span>A memorable journey of seascape panoramas through best landscapes in Porugal</span></div>
+          <div className="p-6 md:p-12 grid gap-4 md:grid-cols-2">
+            <div>
+              <div>
+                  <div className='uppercase text-5xl text-white text-center inset-x-1/4 p-3 font-medium'><span>algarve portugal phototour</span></div>
+                  <div className='uppercase text-2xl text-white font-medium'><span>8-15 december 2024</span></div>
+                  <div className='text-1xl text-white p-3 font-medium'><span>A memorable journey of seascape panoramas through best landscapes in Porugal</span></div>
                   <div><center><button class='bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>see more</button></center></div>
               </div><br /><br />
-              <div class=''><img src={image3} alt="" style={{ width: '95%', borderRadius: '10px' }}/></div>
+              <div><img src={image3} alt="" style={{ width: '95%', borderRadius: '10px' }}/></div>
             </div>
-            <div class="">
+            <div>
               <div>
-                  <div class='uppercase text-5xl text-white text-center inset-x-1/4 p-3 font-medium'><span>senja island wild camping thototour</span></div>
-                  <div class='uppercase text-2xl text-white font-medium'><span>6-13 october 2024</span></div>
-                  <div class='text-1xl text-white p-3 font-medium'><span>An unforgettable adventure to the majestic fjords. With fishing and bonfires under auroras</span></div>
-                  <div><center><button class='bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>see more</button></center></div>
+                  <div className='uppercase text-5xl text-white text-center inset-x-1/4 p-3 font-medium'><span>senja island wild camping thototour</span></div>
+                  <div className='uppercase text-2xl text-white font-medium'><span>6-13 october 2024</span></div>
+                  <div className='text-1xl text-white p-3 font-medium'><span>An unforgettable adventure to the majestic fjords. With fishing and bonfires under auroras</span></div>
+                  <div><center><button className='bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>see more</button></center></div>
                 </div><br /><br />
-                <div class=''><img src={image1} alt="" style={{ width: '95%', borderRadius: '10px' }}/></div>
+                <div><img src={image1} alt="" style={{ width: '95%', borderRadius: '10px' }}/></div>
             </div>
           </div>
         </div>
         
-        <div class="bg-black text-white"><br /><br /><br />
-          <h2 class="uppercase text-5xl text-white">BLOG & UPDATES</h2><br /><br />
-          <div class="">
-            <div class="p-6 md:p-12 grid gap-4 md:grid-cols-2">
+        <div className="bg-black text-white"><br /><br /><br />
+          <h2 className="uppercase text-5xl text-white">BLOG & UPDATES</h2><br /><br />
+          <div className="">
+            <div className="p-6 md:p-12 grid gap-4 md:grid-cols-2">
               <div>
-                <button class="absolute left-2 text-4xl" onClick={prevSlide}>❮</button>
-                <img class="w-full"src={slides[currentSlide].image} alt="Slide"/>
+                <button className="absolute left-2 text-4xl" onClick={prevSlide}>❮</button>
+                <img className="w-full"src={slides[currentSlide].image} alt="Slide"/>
               </div>
-              <div class="">
-                <button class="absolute right-2 text-4xl" onClick={nextSlide}>❯</button>
-                <p class="text-white text-2xl absolute text-slate-300">{slides[currentSlide].topic}</p><br /><br /><br />
-                <p class="w-3/4 text-white text-2xl font-medium uppercase text-slate-300">{slides[currentSlide].title}</p><br /><br /><br />
-                <p class="w-3/4">{slides[currentSlide].description}</p><br />
-                <button class="absolute right-96 bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">Read More</button>
+              <div className="">
+                <button className="absolute right-2 text-4xl" onClick={nextSlide}>❯</button>
+                <p className="text-white text-2xl absolute text-slate-300">{slides[currentSlide].topic}</p><br /><br /><br />
+                <p className="w-3/4 text-white text-2xl font-medium uppercase text-slate-300">{slides[currentSlide].title}</p><br /><br /><br />
+                <p className="w-3/4">{slides[currentSlide].description}</p><br />
+                <button className="absolute right-96 bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">Read More</button>
               </div>
             </div>
           </div>
@@ -179,9 +178,9 @@ const Home = () => {
             <span key={index} className={`dot ${index === currentSlide ? 'active' : ''}`} onClick={() => setCurrentSlide(index)} > </span>
             ))}
           </div><br /><br />
-          <button class=" bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">VIEW ALL POSTS</button><br /><br />
+          <button className=" bg-black p-1 border-2 border-yellow-400 text-yellow-400 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">VIEW ALL POSTS</button><br /><br />
         </div>
-        <div class='text-white'>
+        <div className='text-white'>
           <center><img src={logo} alt=""/></center>
           <p >Copyright 2019 - 2024 |   All Rights Reserved   |   Alessandro Cantarelli Partita Iva N° 12972751007</p><br />
           <center><img src={facebook} alt="" /><img src={inster} alt="" /></center>

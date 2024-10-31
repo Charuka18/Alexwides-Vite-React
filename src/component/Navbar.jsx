@@ -12,9 +12,9 @@ const Navbar = () => {
                 <img class="h-8 w-auto" src={Logo} alt="Logo" />
             </a>
             <ul class="hidden md:flex space-x-6 text-white">
-            <li><a href="/home" class="hover:text-lime-400">HOME</a></li>
+            <li><a href="home" class="hover:text-lime-400">HOME</a></li>
             <li><a href="alex" class="hover:text-lime-400">ALEX'S VISION</a></li>
-            <li><a href="#about" class="hover:text-lime-400">1'EVER PANORAMIC LANDSCAPES TUTORIAL</a></li>
+            <li><a href="panoramic" class="hover:text-lime-400">1'EVER PANORAMIC LANDSCAPES TUTORIAL</a></li>
             
             {/* Dropdown Menu */}
             <li className="relative group">
@@ -43,7 +43,7 @@ const Navbar = () => {
                 <a href="#marketing" className="block px-4 py-2 text-white hover:bg-blue-800">Digital Marketing</a>
                 </div>
             </li>
-            <li><a href="#contact" className="hover:text-lime-400">CONTACT</a></li>
+            <li><a href="contact" className="hover:text-lime-400">CONTACT</a></li>
             </ul>
 
             {/* Mobile Menu Toggle */}
@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <ul className="flex flex-col mt-4 space-y-2 md:hidden text-white">
-            <li><a href="/home" className="hover:text-lime-400">HOME</a></li>
+            <li><a href="home" className="hover:text-lime-400">HOME</a></li>
             <li><a href="alex" className="hover:text-lime-400">ALEX'S VISION</a></li>
             <li><a href="#about" className="hover:text-lime-400">1'EVER PANORAMIC LANDSCAPES TUTORIAL</a></li>
             {/* Dropdown Menu */}
